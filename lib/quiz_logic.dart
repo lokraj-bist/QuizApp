@@ -21,6 +21,16 @@ class QuizLogic {
         {'option': 'Neutral', 'score': 1},
       ],
     },
+
+    {
+      'question': 'What is the best way to end your day?',
+      'answers': [
+        {'option': 'Relaxing', 'score': 4},
+        {'option': 'Stressed', 'score': 3},
+        {'option': 'Exhausted', 'score': 2},
+        {'option': 'Neutral', 'score': 1},
+      ],
+    },
   ];
 
   bool nextQuestion() => currentQuestion < questions.length;

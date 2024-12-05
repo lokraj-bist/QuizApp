@@ -36,15 +36,16 @@ class _QuizScreenState extends State<QuizScreen> {
       body: Padding(
         padding:  EdgeInsets.all(20.0),
         child: quizLogic.nextQuestion()
-            ? Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
+            ? Column(crossAxisAlignment: CrossAxisAlignment.start,
+
                 children: [
                   Text(
                     'Question ${quizLogic.currentQuestion + 1}/${quizLogic.questions.length}',
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
-                        fontSize: 40),
+                        fontSize: 40,
+                    ),
                   ),
                   Divider(
                     color: Colors.white,
